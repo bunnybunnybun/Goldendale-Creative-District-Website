@@ -1,0 +1,56 @@
+header {
+    background-color: #0055d5;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 32px;
+    color: #F4AF36;
+}
+
+body {
+    background-color: #0265ff;
+    margin: 0px;
+    text-align: center;
+}
+
+footer {
+    background-color: #000060;
+    margin: 0px;
+    padding: 10px;
+    text-align: left;
+    font-size: 24px;
+    color: #e7efff;
+}
+
+a.footer-text {
+    color: #e7efff;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+img.logo {
+    border-radius: 50%;
+}
+
+.header-title {
+    vertical-align: center;
+}
+
+a.newsletter-button {
+    display: inline-block;
+    font-size: 24px;
+    margin: 30px;
+    background-color: #F4AF36;
+    padding: 15px;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 3px 3px 0px 3px #a2762a;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    color: #000000;
+}
+
+a.newsletter-button:hover {
+    scale: 1.15;
+    background-color: #ffd350;
+}
