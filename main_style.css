@@ -6,6 +6,8 @@ header {
     font-size: 32px;
     color: #F4AF36;
     box-shadow: 0px 0px 5px 5px #00000055;
+    z-index: 999;
+    position: relative;
 }
 
 body {
@@ -21,6 +23,9 @@ footer {
     text-align: left;
     font-size: 24px;
     color: #e7efff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 a.footer-text {
@@ -58,10 +63,13 @@ a.newsletter-button:hover {
 
 div.welcome {
     text-align: left;
-    margin: 10px;
+    margin: 15px;
+    margin-top: 30px;
+    margin-bottom: 60px;
     animation-duration: 3s;
     animation-name: slide-in;
     width: 40%;
+    font-size: 24px;
 }
 
 @keyframes slide-in {
@@ -77,8 +85,10 @@ div.welcome {
 }
 
 div.welcome_box {
-    margin: 20px;
+    margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(https://placehold.net/800x600.png);
+    z-index: 1;
 }
