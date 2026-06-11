@@ -1,13 +1,41 @@
 header {
+    display: flex;
+    align-items: center;
     background-color: #B036F3;
     margin: 0px;
     padding: 10px;
     text-align: center;
     font-size: 32px;
     color: #F4AF36;
-    box-shadow: -1px 5px 5px 0px #00000055;
+    box-shadow: 0px 0px 5px 5px #00000055;
     z-index: 999;
+    position: sticky;
+    top: 0;
+}
+
+.dropdown {
+    margin-left: auto;
     position: relative;
+    display: inline-block;
+}
+
+.drop-btn {
+    width: 50px;
+    height: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;               /* aligns dropdown to the right edge */
+    top: 100%;              /* sits directly below the button */
+    background-color: #fff;
+    min-width: 180px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 body {
@@ -24,8 +52,6 @@ footer {
     text-align: left;
     font-size: 24px;
     color: #e7efff;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -41,6 +67,8 @@ img.logo {
 
 .header-title {
     vertical-align: center;
+    text-shadow: 2px 2px 2px #00000055;
+    margin: 20px;
 }
 
 a.newsletter-button {
@@ -92,4 +120,19 @@ div.welcome_box {
     align-items: center;
     background-image: url(https://placehold.net/800x600.png);
     z-index: 1;
+}
+
+div.upcoming-events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.mct {
+    background-color: #00CACA;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px #00000055;
+    width: 60%;
 }
