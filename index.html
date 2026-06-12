@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Goldendale Creative District</title>
@@ -14,6 +15,7 @@
                 <div class="dropdown-content">
                     <a href="about-us">About us</a>
                     <a href="contact">Contact</a>
+                    <a href="history">History</a>
                 </div>
             </div>
         </header>
@@ -21,7 +23,7 @@
             <div class="welcome"><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi.</p></div>
         </div>
         <div class="upcoming-events">
-            <h2 style="font-size: 32px;">Upcoming events</h2>
+            <h2 style="font-size: 32px;">Performing Arts Creative Showcase</h2>
             <div class="mct">
                 <h4 style="font-size: 24px;">Missoula Childrens Theatre</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien.</p>
@@ -33,5 +35,19 @@
             <a href="about-us" class="footer-text">About us</a>
             <a href="https://www.zeffy.com/en-US/newsletter-form/sign-up-for-our-newsletter-3604" target="_blank" rel="noopener noreferrer" class="footer-text">Sign up for our newsletter</a>
         </footer>
+        <script>
+            // Show navigation dropdown when clicking the hamburger menu button
+            document.querySelector('.drop-btn').addEventListener('click', function() {
+                const content = document.querySelector('.dropdown-content');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.dropdown')) {
+                    document.querySelector('.dropdown-content').style.display = 'none';
+                }
+            });
+        </script>
     </body>
 </html>

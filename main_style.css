@@ -17,25 +17,53 @@ header {
     margin-left: auto;
     position: relative;
     display: inline-block;
+    margin-right: 20px;
 }
 
 .drop-btn {
     width: 50px;
     height: 50px;
+    font-size: 32px;
+    background-color: #00CACA;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 6px 0px 0px #008888;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.drop-btn:hover {
+    scale: 1.15;
+}
+
+.drop-btn:active {
+    box-shadow: 0px 0px 0px 0px #008888;
+    translate: 0px 6px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    right: 0;               /* aligns dropdown to the right edge */
-    top: 100%;              /* sits directly below the button */
-    background-color: #fff;
+    right: 0;
+    top: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #00CACA;
     min-width: 180px;
     z-index: 1000;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #008888;
+    border-width: 3px;
+    box-shadow: 0px 0px 0px 3px #00CACA, 5px 5px 5px 0px #00000055;
+    text-align: left;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-content a {
+    color: #000000;
+    font-size: 28px;
     display: block;
+    margin: 10px;
 }
 
 body {
@@ -79,7 +107,7 @@ a.newsletter-button {
     padding: 15px;
     border-radius: 20px;
     border-style: none;
-    box-shadow: 3px 3px 0px 3px #a2762a;
+    box-shadow: 0px 6px 0px 0px #a2762a;
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out;
     color: #000000;
@@ -88,6 +116,11 @@ a.newsletter-button {
 a.newsletter-button:hover {
     scale: 1.15;
     background-color: #ffd350;
+}
+
+a.newsletter-button:active {
+    box-shadow: 0px 0px 0px 0px #a2762a;
+    translate: 0px 6px;
 }
 
 div.welcome {
