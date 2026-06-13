@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Goldendale Creative District</title>
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+        <link rel="stylesheet" href="about-us.css" />
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.jpg" height="100px" width="100px" class="logo">
+            <b class="header-title">Goldendale Creative District</b>
+            <div class="dropdown">
+                <button class="drop-btn">☰</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="about-us.html">About us</a>
+                    <a href="history">History</a>                    
+                    <a href="https://www.zeffy.com/en-US/newsletter-form/sign-up-for-our-newsletter-3604" target="_blank" rel="noopener noreferrer">Newsletter</a>
+                    <a href="contact">Contact</a>
+                </div>
+            </div>
+        </header>
+        <div class="mission-vision-values">
+            <div>
+                <h4>Mission</h4>
+                <p>Goldendale Creative District fosters economic development through the arts, partnerships and creative culture.</p>
+            </div>
+            <div>
+                <h4>Vision</h4>
+                <p>We aim to stimulate a welcoming, thriving and vibrant Goldendale, by embracing our past and welcoming the future.</p>
+            </div>
+            <div>
+                <h4>Values</h4>
+                <ul style="text-align: left;">
+                    <li>Honor diverse cultural identities;</li> 
+                    <li>Provide equitable access to artistic opportunities;</li> 
+                    <li>Encourage community service;</li> 
+                    <li>Promote community and individual well-being.</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <a href="about-us.html" class="footer-text">About us</a>
+            <a href="history" class="footer-text">History</a>
+            <a href="https://www.zeffy.com/en-US/newsletter-form/sign-up-for-our-newsletter-3604" target="_blank" rel="noopener noreferrer" class="footer-text">Our Newsletter</a>
+            <a href="contact" class="footer-text">Contact Us</a>
+        </footer>
+        <script>
+            // Show navigation dropdown when clicking the hamburger menu button
+            document.querySelector('.drop-btn').addEventListener('click', function() {
+                const content = document.querySelector('.dropdown-content');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.dropdown')) {
+                    document.querySelector('.dropdown-content').style.display = 'none';
+                }
+            });
+        </script>
+    </body>
+</html>

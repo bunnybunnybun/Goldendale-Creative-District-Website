@@ -101,74 +101,25 @@ img.logo {
     margin: 20px;
 }
 
-a.newsletter-button {
-    display: inline-block;
-    font-size: 24px;
-    margin: 30px;
-    background-color: #F4AF36;
-    padding: 15px;
-    border-radius: 20px;
-    border-style: none;
-    box-shadow: 0px 6px 0px 0px #a2762a;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
-    color: #000000;
-}
-
-a.newsletter-button:hover {
-    scale: 1.15;
-    background-color: #ffd350;
-}
-
-a.newsletter-button:active {
-    box-shadow: 0px 0px 0px 0px #a2762a;
-    translate: 0px 6px;
-}
-
-div.welcome {
-    text-align: left;
-    margin: 15px;
-    margin-top: 30px;
-    margin-bottom: 90px;
-    animation-duration: 2s;
-    animation-name: slide-in;
-    width: 50%;
-    font-size: 32px;
-}
-
-@keyframes slide-in {
-  from {
-    translate: 100vw 0;
-    scale: 200% 1;
-  }
-
-  to {
-    translate: 0 0;
-    scale: 100% 1;
-  }
-}
-
-div.welcome_box {
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom, #00000000 60%, #0265ff), url(https://placehold.net/800x600.png);
-    z-index: 1;
-}
-
-div.events-container {
-    margin-left: 10%;
-    margin-right: 10%;
+div.mission-vision-values {
+    margin: 30px 5% 0px 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-div.events-grid-item {
+div.mission-vision-values div {
+    margin: 20px;
+    padding: 5px;
     background-color: #00CACA;
-    padding: 20px;
+    border-style: solid;
+    border-color: #F4AF36;
+    border-width: 5px;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 0px #00000055;
+    box-shadow: 0px 0px 0px 5px #00CACA;
+}
+
+div.mission-vision-values div h4 {
+    font-size: 32px;
+    margin: 20px;
+    color: #F4AF36;
 }

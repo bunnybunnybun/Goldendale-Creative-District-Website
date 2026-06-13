@@ -1,0 +1,204 @@
+header {
+    display: flex;
+    align-items: center;
+    background-color: #B036F3;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 32px;
+    color: #F4AF36;
+    box-shadow: 0px 0px 5px 5px #00000055;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+
+.dropdown {
+    margin-left: auto;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.drop-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    background-color: #00CACA;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 6px 0px 0px #008888;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.drop-btn:hover {
+    scale: 1.15;
+    cursor: pointer;
+}
+
+.drop-btn:active {
+    box-shadow: 0px 0px 0px 0px #008888;
+    translate: 0px 6px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #00CACA;
+    min-width: 180px;
+    z-index: 1000;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #008888;
+    border-width: 3px;
+    box-shadow: 0px 0px 0px 3px #00CACA, 5px 5px 5px 0px #00000055;
+    text-align: left;
+    translate: -3px 0px;
+}
+
+.dropdown-content a {
+    color: #000000;
+    font-size: 32px;
+    display: block;
+    margin: 10px;
+}
+
+body {
+    background-color: #0265ff;
+    margin: 0px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+footer {
+    background-color: #000060;
+    margin: 0px;
+    padding: 10px;
+    text-align: left;
+    font-size: 24px;
+    color: #e7efff;
+    width: 100%;
+}
+
+a.footer-text {
+    color: #e7efff;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+img.logo {
+    border-radius: 50%;
+}
+
+.header-title {
+    vertical-align: center;
+    text-shadow: 2px 2px 2px #00000055;
+    margin: 20px;
+}
+
+.PACS {
+    font-size: 36px;
+    color: #F4AF36;
+    text-shadow: 2px 2px #00000055;
+}
+
+a.newsletter-button {
+    display: inline-block;
+    font-size: 24px;
+    margin: 30px;
+    background-color: #F4AF36;
+    padding: 15px;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 0px 6px 0px 0px #a2762a;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    color: #000000;
+}
+
+a.newsletter-button:hover {
+    scale: 1.15;
+    background-color: #ffd350;
+}
+
+a.newsletter-button:active {
+    box-shadow: 0px 0px 0px 0px #a2762a;
+    translate: 0px 6px;
+}
+
+div.welcome {
+    text-align: left;
+    margin: 15px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    animation-duration: 2s;
+    animation-name: slide-in;
+    width: 50%;
+    font-size: 32px;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 100vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+div.welcome_box {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #00000000 60%, #0265ff), url(https://placehold.net/800x600.png);
+    z-index: 1;
+}
+
+.events-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.events-grid-item {
+    background-color: #00CACA;
+    padding: 0px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px #00000055;
+    font-size: 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.event-date {
+    background-color: #FF3DB7;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-style: none;
+    width: fit-content;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.event-title {
+    font-size: 28px;
+    margin: 10px;
+}
+
+.events-grid-item p {
+    margin: 5px;
+    margin-bottom: 10px;
+}
