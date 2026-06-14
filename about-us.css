@@ -1,12 +1,24 @@
+:root {
+    --main-bg-color: #0265ff;
+    --main-box-bg-color: #00CACA;
+    --font-color: #000000;
+    --gold: #F4AF36;
+    --teal: #00CACA;
+    --blue: #0265ff;
+    --purple: #B036F3;
+    --lime: #8EF438;
+    --pink: #FF3DB7;
+}
+
 header {
     display: flex;
     align-items: center;
-    background-color: #B036F3;
+    background-color: var(--purple);
     margin: 0px;
     padding: 10px;
     text-align: center;
     font-size: 32px;
-    color: #F4AF36;
+    color: var(--gold);
     box-shadow: 0px 0px 5px 5px #00000055;
     z-index: 999;
     position: sticky;
@@ -24,7 +36,7 @@ header {
     width: 50px;
     height: 50px;
     font-size: 32px;
-    background-color: #00CACA;
+    background-color: var(--main-box-bg-color);
     border-style: none;
     border-radius: 10px;
     box-shadow: 0px 6px 0px 0px #008888;
@@ -49,27 +61,27 @@ header {
     top: 100%;
     margin-top: 20px;
     padding: 5px;
-    background-color: #00CACA;
+    background-color: var(--main-box-bg-color);
     min-width: 180px;
     z-index: 1000;
     border-style: solid;
     border-radius: 10px;
     border-color: #008888;
     border-width: 3px;
-    box-shadow: 0px 0px 0px 3px #00CACA, 5px 5px 5px 0px #00000055;
+    box-shadow: 0px 0px 0px 3px var(--main-box-bg-color), 5px 5px 5px 0px #00000055;
     text-align: left;
     translate: -3px 0px;
 }
 
 .dropdown-content a {
-    color: #000000;
+    color: var(--font-color);
     font-size: 32px;
     display: block;
     margin: 10px;
 }
 
 body {
-    background-color: #0265ff;
+    background-color: var(--main-bg-color);
     margin: 0px;
     text-align: center;
     overflow-x: hidden;
@@ -99,7 +111,12 @@ img.logo {
     vertical-align: center;
     text-shadow: 2px 2px 2px #00000055;
     margin: 20px;
-    color: #F4AF36;
+    color: var(--gold);
+}
+
+h1 {
+    color: var(--gold);
+    text-shadow: 2px 2px 2px #00000055;
 }
 
 div.mission-vision-values {
@@ -111,16 +128,15 @@ div.mission-vision-values {
 div.mission-vision-values div {
     margin: 20px;
     padding: 5px;
-    background-color: #00CACA;
+    background-color: var(--main-box-bg-color);
     border-style: solid;
-    border-color: #F4AF36;
+    border-color: var(--gold);
     border-width: 5px;
     border-radius: 20px;
-    box-shadow: 0px 0px 0px 5px #00CACA;
+    box-shadow: 0px 0px 0px 5px var(--main-box-bg-color);
 }
 
 div.mission-vision-values div h4 {
     font-size: 32px;
     margin: 20px;
-    color: #F4AF36;
 }
