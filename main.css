@@ -99,6 +99,7 @@ img.logo {
     vertical-align: center;
     text-shadow: 2px 2px 2px #00000055;
     margin: 20px;
+    color: #F4AF36;
 }
 
 .PACS {
@@ -111,6 +112,7 @@ a.newsletter-button {
     display: inline-block;
     font-size: 24px;
     margin: 30px;
+    margin-bottom: 10px;
     background-color: #F4AF36;
     padding: 15px;
     border-radius: 20px;
@@ -123,7 +125,9 @@ a.newsletter-button {
 
 a.newsletter-button:hover {
     scale: 1.15;
+    rotate: z 2deg;
     background-color: #ffd350;
+    box-shadow: 0px 6px 0px 0px #a69036;
 }
 
 a.newsletter-button:active {
@@ -181,6 +185,12 @@ div.welcome_box {
     display: block;
     color: black;
     text-decoration: none;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.events-grid-item:hover {
+    scale: 103%;
 }
 
 .event-date {
