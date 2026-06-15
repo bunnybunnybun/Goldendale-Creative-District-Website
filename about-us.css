@@ -8,6 +8,7 @@
     --purple: #B036F3;
     --lime: #8EF438;
     --pink: #FF3DB7;
+    --dark-blue: #000060;
 }
 
 header {
@@ -88,7 +89,7 @@ body {
 }
 
 footer {
-    background-color: #000060;
+    background-color: var(--dark-blue);
     margin: 0px;
     padding: 10px;
     text-align: left;
@@ -139,4 +140,44 @@ div.mission-vision-values div {
 div.mission-vision-values div h4 {
     font-size: 32px;
     margin: 20px;
+}
+
+div.our-team-div {
+    background-color: var(--purple);
+    margin: 30px 5% 30px 5%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+div.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.team-member {
+    background-color: var(--dark-blue);
+    border-style: none;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 15px;
+}
+
+img.team-member-headshot {
+    border-radius: 100%;
+}
+
+p.team-member-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--gold);
+    text-shadow: 2px 2px 2px #00000055;
+}
+
+p.team-member-role {
+    color: var(--teal);
+    font-weight: 600;
+}
+
+p.team-member-description {
+    color: white;
 }
