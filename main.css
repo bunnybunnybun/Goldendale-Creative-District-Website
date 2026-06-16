@@ -224,3 +224,28 @@ div.welcome_box {
     margin: 5px;
     margin-bottom: 10px;
 }
+
+.wave-divider {
+    aspect-ratio: 900/200;
+    background: no-repeat center;
+    background-size: cover;
+    background-image: url(images/layered-waves-divider.svg);
+}
+
+div.sponsors-div {
+    padding: 15px;
+    background-color: #ea3a3a;
+}
+
+.ty-sponsors {
+    margin-top: 0px;
+    font-size: 36px;
+    color: var(--gold);
+    text-shadow: 2px 2px #00000055;
+    font-weight: 550;
+}
+
+.sponsor {
+    font-size: 32px;
+    color: #ffffff;
+}
