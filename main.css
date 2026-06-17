@@ -10,6 +10,11 @@
     --pink: #FF3DB7;
 }
 
+* {
+    animation-duration: 2s;
+    animation-name: fade-in;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -20,9 +25,11 @@ header {
     font-size: 32px;
     color: var(--gold);
     box-shadow: 0px 0px 5px 5px #00000055;
-    z-index: 999;
+    z-index: 99;
     position: sticky;
     top: 0;
+    animation-duration: 2s;
+    animation-name: slide-in-top;
 }
 
 .dropdown {
@@ -118,6 +125,9 @@ img.logo {
     font-size: 36px;
     color: var(--gold);
     text-shadow: 2px 2px #00000055;
+    animation-duration: 2s;
+    animation-name: slide-in-left;
+    animation-timing-function: ease-out;
 }
 
 a.newsletter-button {
@@ -152,13 +162,25 @@ div.welcome {
     margin: 15px;
     margin-top: 30px;
     margin-bottom: 90px;
-    animation-duration: 2s;
-    animation-name: slide-in;
+    animation-duration: 2.5s;
+    animation-name: slide-in-right;
     width: 50%;
     font-size: 32px;
 }
 
-@keyframes slide-in {
+@keyframes slide-in-top {
+    from {
+      translate: 0vw -140px;
+      scale: 100% 100%;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 100%;
+    }
+}
+
+@keyframes slide-in-right {
   from {
     translate: 100vw 0;
     scale: 200% 1;
@@ -168,6 +190,39 @@ div.welcome {
     translate: 0 0;
     scale: 100% 1;
   }
+}
+
+@keyframes slide-in-left {
+  from {
+    translate: -100vw 0vw;
+    scale: 100% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+@keyframes pop-in {
+    from {
+        scale: 0% 0%;
+        rotate: ;
+    }
+
+    to {
+        scale: 100% 100%;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        visibility: 1;
+    }
 }
 
 div.welcome_box {
@@ -199,6 +254,9 @@ div.welcome_box {
     text-decoration: none;
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-name: pop-in;
+    animation-timing-function: cubic-bezier(.64,.11,.49,1.26);
 }
 
 .events-grid-item:hover {

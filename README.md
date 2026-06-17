@@ -1,3 +1,4 @@
+# This is a work in progress!
 # Goldendale Creative District Website
 It's a website, wow so cool :D
 
