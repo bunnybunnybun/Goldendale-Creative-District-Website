@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #0265ff;
+    --main-bg-color: #5ccafe;
     --main-box-bg-color: #00CACA;
     --font-color: #000000;
     --gold: #F4AF36;
@@ -8,12 +8,13 @@
     --purple: #B036F3;
     --lime: #8EF438;
     --pink: #FF3DB7;
+    --text-shadow: 2px 2px 2px #00000055;
 }
 
 header {
     display: flex;
     align-items: center;
-    background-color: var(--purple);
+    background-color: #EA3A3A;
     margin: 0px;
     padding: 10px;
     text-align: center;
@@ -38,10 +39,10 @@ header {
     width: 50px;
     height: 50px;
     font-size: 32px;
-    background-color: var(--main-box-bg-color);
+    background-color: var(--gold);
     border-style: none;
     border-radius: 10px;
-    box-shadow: 0px 6px 0px 0px #008888;
+    box-shadow: 0px 6px 0px 0px #a2762a;
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out;
 }
@@ -90,41 +91,15 @@ body {
     color: var(--font-color);
 }
 
-footer {
-    background-color: #000060;
-    margin: 0px;
-    padding: 10px;
-    text-align: left;
-    font-size: 24px;
-    color: #e7efff;
-    width: 100%;
-}
-
-a.footer-text {
-    color: #e7efff;
-    margin-left: 35px;
-    margin-right: 35px;
-}
-
 img.logo {
     border-radius: 50%;
 }
 
 .header-title {
     vertical-align: center;
-    text-shadow: 2px 2px 2px #00000055;
+    text-shadow: var(--text-shadow);
     margin: 20px;
     color: var(--gold);
-}
-
-.Goldendale-Summer-Stage {
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    margin-left: 7%;
-    margin-right: 7%;
-    padding: 20px;
-    border-radius: 30px;
 }
 
 .event-title {
@@ -138,7 +113,7 @@ img.logo {
 .GSS {
     font-size: 36px;
     color: var(--gold);
-    text-shadow: 2px 2px #00000055;
+    text-shadow: var(--text-shadow);
 }
 
 .GSS em {
@@ -191,6 +166,7 @@ div.welcome {
     width: 50%;
     font-size: 36px;
     color: white;
+    text-shadow: 2px 2px 0px #000000;
 }
 
 @keyframes slide-in-top {
@@ -256,11 +232,18 @@ div.welcome_box {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #00000000 50%, var(--main-bg-color)), url(images/FourSeasonsOfGoldendale_SChoate6.jpg);
+    background-image: linear-gradient(to bottom, #00000000 0%, var(--main-bg-color)), url(images/FourSeasonsOfGoldendale_SChoate6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 1;
+}
+
+.upcoming-events {
+    color: var(--gold);
+    margin-top: 35px;
+    text-shadow: 2px 2px #00000085;
+    font-size: 34px;
 }
 
 .events-container {
@@ -276,13 +259,20 @@ div.welcome_box {
 
 .event {
     border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px #00000055;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.event:hover {
+    scale: 1.03;
 }
 
 .MCT-event {
     background-color: white;
 }
 
-.MCT-event img {
+.event img {
     width: 100%;
     border-radius: 20px;
 }
@@ -324,7 +314,7 @@ div.welcome_box {
 .event-title {
     font-size: 36px;
     color: var(--gold);
-    text-shadow: 2px 2px #00000055;
+    text-shadow: var(--text-shadow);
     text-decoration-color: red;
 }
 
@@ -336,13 +326,6 @@ div.welcome_box {
 .events-grid-item p {
     margin: 5px;
     margin-bottom: 10px;
-}
-
-.wave-divider {
-    aspect-ratio: 900/200;
-    background: no-repeat center;
-    background-size: cover;
-    background-image: url(images/layered-waves-divider.svg);
 }
 
 div.sponsors-div {
@@ -360,4 +343,27 @@ div.sponsors-div {
 .sponsor {
     font-size: 28px;
     color: #ffffff;
+}
+
+.wave-divider {
+    aspect-ratio: 900/150;
+    background: no-repeat center;
+    background-size: cover;
+    background-image: url(images/layered-waves-divider.svg);
+}
+
+footer {
+    background-color: #EA3A3A;
+    margin: 0px;
+    padding: 10px;
+    text-align: left;
+    font-size: 24px;
+    color: #e7efff;
+    width: 100%;
+}
+
+a.footer-text {
+    color: var(--font-color);
+    margin-left: 35px;
+    margin-right: 35px;
 }
