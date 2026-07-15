@@ -77,7 +77,7 @@ header {
 
 .dropdown-content a {
     color: var(--font-color);
-    font-size: 32px;
+    font-size: 24px;
     display: block;
     margin: 10px;
 }
