@@ -130,33 +130,6 @@ img.logo {
     transform-origin: top left;
 }
 
-a.newsletter-button {
-    display: inline-block;
-    font-size: 24px;
-    margin: 30px;
-    margin-bottom: 10px;
-    background-color: var(--gold);
-    padding: 15px;
-    border-radius: 20px;
-    border-style: none;
-    box-shadow: 0px 6px 0px 0px #a2762a;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
-    color: var(--font-color);
-}
-
-a.newsletter-button:hover {
-    scale: 1.15;
-    rotate: z 2deg;
-    background-color: #ffd350;
-    box-shadow: 0px 6px 0px 0px #a69036;
-}
-
-a.newsletter-button:active {
-    box-shadow: 0px 0px 0px 0px #a2762a;
-    translate: 0px 6px;
-}
-
 div.welcome {
     text-align: left;
     margin-top: 50px;
@@ -326,6 +299,33 @@ div.welcome_box {
 .events-grid-item p {
     margin: 5px;
     margin-bottom: 10px;
+}
+
+a.newsletter-button {
+    display: inline-block;
+    font-size: 24px;
+    margin: 30px;
+    margin-bottom: 10px;
+    background-color: var(--gold);
+    padding: 15px;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 0px 6px 0px 0px #a2762a;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    color: var(--font-color);
+}
+
+a.newsletter-button:hover {
+    scale: 1.15;
+    rotate: z 2deg;
+    background-color: #ffd350;
+    box-shadow: 0px 6px 0px 0px #a69036;
+}
+
+a.newsletter-button:active {
+    box-shadow: 0px 0px 0px 0px #a2762a;
+    translate: 0px 6px;
 }
 
 div.sponsors-div {

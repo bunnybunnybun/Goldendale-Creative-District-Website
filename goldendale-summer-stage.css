@@ -88,6 +88,7 @@ body {
     text-align: center;
     overflow-x: hidden;
     color: var(--font-color);
+    background-image: url(images/blob-scatter.svg);
 }
 
 img.logo {
@@ -111,6 +112,11 @@ img.logo {
     font-size: 30px;
 }
 
+.schedule-header {
+    margin-top: 50px;
+    font-size: 24px;
+}
+
 .schedule-grid {
     display: grid;
     grid-template-columns: 0.5fr 2fr;
@@ -124,6 +130,10 @@ img.logo {
     margin-right: 10px;
     border-radius: 20px;
     padding: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .event-description {
@@ -141,6 +151,35 @@ img.logo {
 .event-description img {
     width: 100px;
     height: 100px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+a.registration-button {
+    display: inline-block;
+    font-size: 24px;
+    margin: 30px;
+    margin-bottom: 10px;
+    background-color: var(--gold);
+    padding: 15px;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 0px 6px 0px 0px #a2762a;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    color: var(--font-color);
+}
+
+a.registration-button:hover {
+    scale: 1.15;
+    rotate: z 2deg;
+    background-color: #ffd350;
+    box-shadow: 0px 6px 0px 0px #a69036;
+}
+
+a.registration-button:active {
+    box-shadow: 0px 0px 0px 0px #a2762a;
+    translate: 0px 6px;
 }
 
 div.sponsors-div {
