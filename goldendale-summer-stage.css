@@ -164,6 +164,17 @@ a.performer-link {
     color: black;
 }
 
+.throughout-weekend-box {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
 a.registration-button {
     display: inline-block;
     font-size: 24px;
@@ -213,7 +224,14 @@ div.sponsors-div {
 
 .sponsor-logo {
     width: auto;
-    height: 100px;
+    height: 130px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.in-kind-sponsor-logo {
+    width: auto;
+    height: 70px;
     border-radius: 5px;
     border-style: none;
 }
