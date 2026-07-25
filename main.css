@@ -9,7 +9,7 @@
     --lime: #8EF438;
     --pink: #FF3DB7;
     --text-shadow: 2px 2px 2px #00000055;
-    --header-color: #EA3A3A;
+    --header-color: #e45557;
 }
 
 header {
@@ -132,14 +132,26 @@ img.logo {
 }
 
 div.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: left;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     animation-duration: 2.5s;
     animation-name: slide-in-right;
-    width: 50%;
+    width: 100%;
     font-size: 36px;
-    color: white;
+}
+
+div.welcome p {
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: var(--gold);
+    background-color: #e45557;
+    padding: 20px;
+    border-radius: 20px;
     text-shadow: 2px 2px 0px #000000;
 }
 
@@ -202,15 +214,22 @@ div.welcome {
 
 div.welcome_box {
     margin: 0px;
-    padding: 3%;
-    display: flex;
+    padding: 0;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #00000000 0%, var(--main-bg-color)), url(images/FourSeasonsOfGoldendale_SChoate6.jpg);
+    background-image: url(images/FourSeasonsOfGoldendale_SChoate6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 1;
+}
+
+.blue-wave-divider {
+    aspect-ratio: 900/80;
+    background: no-repeat center;
+    background-size: cover;
+    background-image: url(images/blue-wave.svg);
+    z-index: 99999999;
 }
 
 .upcoming-events {
