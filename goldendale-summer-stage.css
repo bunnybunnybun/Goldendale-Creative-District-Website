@@ -257,6 +257,15 @@ div.sponsors-div {
     gap: 30px;
 }
 
+.art-enthusiast-sponsors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
 .wave-divider {
     aspect-ratio: 900/150;
     background: no-repeat center;
