@@ -141,6 +141,7 @@ div.welcome p {
     padding: 20px;
     border-radius: 20px;
     text-shadow: 2px 2px 0px #000000;
+    box-shadow: 5px 5px 5px 0px #00000085;
 }
 
 @keyframes slide-in-top {
@@ -240,7 +241,7 @@ div.welcome_box {
 
 .event {
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 0px #00000055;
+    box-shadow: 0px 8px 0px 0px #e1e1e1;
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out;
 }
