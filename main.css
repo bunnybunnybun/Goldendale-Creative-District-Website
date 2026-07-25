@@ -9,12 +9,13 @@
     --lime: #8EF438;
     --pink: #FF3DB7;
     --text-shadow: 2px 2px 2px #00000055;
+    --header-color: #EA3A3A;
 }
 
 header {
     display: flex;
     align-items: center;
-    background-color: #EA3A3A;
+    background-color: var(--header-color);
     margin: 0px;
     padding: 10px;
     text-align: center;
