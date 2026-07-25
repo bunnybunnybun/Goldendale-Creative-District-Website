@@ -151,7 +151,7 @@ img.logo {
     text-align: left;
 }
 
-.event-description img {
+.event-image {
     width: 100px;
     height: auto;
     border-radius: 5px;
@@ -167,9 +167,7 @@ a.performer-link {
 }
 
 .throughout-weekend-box {
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
+    background-color: var(--purple);
     border-radius: 20px;
     width: fit-content;
     margin-left: auto;
