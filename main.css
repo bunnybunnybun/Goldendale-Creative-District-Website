@@ -25,8 +25,6 @@ header {
     z-index: 99;
     position: sticky;
     top: 0;
-    animation-duration: 2s;
-    animation-name: slide-in-top;
 }
 
 .dropdown {
@@ -103,14 +101,6 @@ img.logo {
     color: var(--gold);
 }
 
-.event-title {
-    animation-duration: 2s;
-    animation-name: slide-in-left;
-    animation-timing-function: ease-out;
-    overflow-x: visible;
-    position: relative;
-}
-
 .GSS {
     font-size: 36px;
     color: var(--gold);
@@ -138,8 +128,6 @@ div.welcome {
     text-align: left;
     margin-top: 0px;
     margin-bottom: 0px;
-    animation-duration: 2.5s;
-    animation-name: slide-in-right;
     width: 100%;
     font-size: 36px;
 }
