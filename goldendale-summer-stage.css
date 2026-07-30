@@ -231,7 +231,7 @@ div.sponsors-div {
 
 .small-sponsor-logo {
     width: auto;
-    height: 70px;
+    height: 80px;
     border-radius: 5px;
     border-style: none;
 }
@@ -241,9 +241,10 @@ div.sponsors-div {
     color: var(--font-color);
     background-color: white;
     width: fit-content;
-    height: fit-content;
     border-radius: 5px;
     padding: 5px;
+    min-height: 75px;
+    align-content: center;
 }
 
 .in-kind-sponsors {
