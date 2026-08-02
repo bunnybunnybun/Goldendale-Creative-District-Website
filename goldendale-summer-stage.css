@@ -247,7 +247,7 @@ div.sponsors-div {
     align-content: center;
 }
 
-.in-kind-sponsors {
+.creative-collaborator-sponsors {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -257,6 +257,15 @@ div.sponsors-div {
 }
 
 .art-enthusiast-sponsors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.in-kind-sponsors {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
