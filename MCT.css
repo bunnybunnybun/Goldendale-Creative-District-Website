@@ -85,6 +85,7 @@ header {
 }
 
 body {
+    font-size: 20px;
     background-color: var(--main-bg-color);
     margin: 0px;
     text-align: center;
