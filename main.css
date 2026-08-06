@@ -252,6 +252,8 @@ div.welcome_box {
 
 .MCT-event {
     background-color: white;
+    display: flex;
+    flex-direction: row;
 }
 
 .event img {
