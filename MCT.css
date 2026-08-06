@@ -149,21 +149,28 @@ a.registration-button:active {
     translate: 0px 6px;
 }
 
-div.sponsors-div {
-    padding: 15px;
-}
-
-.ty-sponsors {
-    margin-top: 0px;
-    font-size: 32px;
+h2.cast-header {
+    vertical-align: center;
+    font-size: 48px;
+    text-shadow: 2px 2px 2px #00000085;
+    margin: 20px;
     color: var(--gold);
-    text-shadow: 2px 2px #00000055;
-    font-weight: 550;
 }
 
-.sponsor {
-    font-size: 28px;
-    color: #ffffff;
+div.cast-grid {
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100px, 20%), max(20px, 250px)));
+    column-width: 100px;
+}
+
+video.cast-video {
+    border-radius: 5px;
+    width: 250px;
 }
 
 .wave-divider {

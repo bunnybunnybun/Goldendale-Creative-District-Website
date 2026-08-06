@@ -27,12 +27,84 @@
         <div class="vertical-div-1">
             <img src="images/Wiz-of-the-West.png" class="WOTW-image">
             <div class="horizontal-div">
-                <p>PARTICIPATION IN THE MUSICAL IS FREE!<br>AGES 6 AND UP<br>AUDITIONS ARE AT 10AM<br>MON, AUG. 3</p>
-                <a class="registration-button" href="https://www.zeffy.com/en-US/ticketing/free-audition-registration-wiz-of-the-west" target="_blank" rel="noopener noreferrer">Register for free!</a>
+                <p>Saturday, Aug 8th 11 AM & 1AM</p>
                 <p>TICKETS TO THE SHOW<br>$7 YOUTH AND SENIORS<br>$10 ADULTS</p>
                 <a class="registration-button" href="https://www.zeffy.com/en-US/ticketing/wiz-of-the-west-performances" target="_blank" rel="noopener noreferrer">Purchase ticket</a>
                 <p>All proceeds go to support the<br>Goldendale Creative District</p>
             </div>
+        </div>
+
+        <h2 class="cast-header">The cast</h2>
+        <div class="cast-grid">
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/BARRETT JAEGER.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/BELLA BATASTINI.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/CARLISLE POE.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/CHRYSANTHEMUM NANOCCHIO.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/DIANA KUNTZ.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/ELIAS COLYAR.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/FIN JAUKEN.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/HENRY DUYCK.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/JOEY BATASTINI.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/JON JON LEHMAN.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/JOURNEY WILLETT.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/KYLA SHERIDAN.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/MONTERREY MOODY.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/ROMAN NANOCCHIO.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/SAMMY BATASTINI.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/SILAS CALLAGHAN.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/SOPHIE ALLRED-MARKHAM.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/SUSIE PHELPS.mp4" type="video/mp4">
+            </video>
+            
+            <script>
+              const videos = document.querySelectorAll('.cast-video');
+              
+              videos.forEach(video => {
+                video.addEventListener('mouseenter', () => {
+                  video.play();
+                });
+                
+                video.addEventListener('mouseleave', () => {
+                  video.pause();
+                  video.currentTime = 0;
+                });
+              });
+            </script>
         </div>
         
         <div class="wave-divider"></div>
