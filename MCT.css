@@ -123,33 +123,6 @@ img.logo {
     flex-direction: column;
 }
 
-a.registration-button {
-    display: inline-block;
-    font-size: 24px;
-    margin: 30px;
-    margin-bottom: 10px;
-    background-color: var(--gold);
-    padding: 15px;
-    border-radius: 20px;
-    border-style: none;
-    box-shadow: 0px 6px 0px 0px #a2762a;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
-    color: var(--font-color);
-}
-
-a.registration-button:hover {
-    scale: 1.15;
-    rotate: z 2deg;
-    background-color: #ffd350;
-    box-shadow: 0px 6px 0px 0px #a69036;
-}
-
-a.registration-button:active {
-    box-shadow: 0px 0px 0px 0px #a2762a;
-    translate: 0px 6px;
-}
-
 h2.cast-header {
     vertical-align: center;
     font-size: 48px;
