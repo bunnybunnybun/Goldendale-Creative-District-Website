@@ -5,21 +5,27 @@
         <title>Goldendale Creative District</title>
         <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+        <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="about-us.css" />
     </head>
     <body>
         <header>
             <a href="index.html"><img src="images/logo.jpg" height="100px" width="100px" class="logo"></a>
             <a href="index.html" style="text-decoration: none;"><b class="header-title">Goldendale Creative District</b></a>
-            <div class="dropdown">
+            <div class="navigation-mobile">
                 <button class="drop-btn">☰</button>
                 <div class="dropdown-content">
-                    <a href="index.html">Home</a>
                     <a href="about-us.html">About Us</a>
-                    <!--<a href="history">History</a>-->                
+                    <!--<a href="history">History</a>-->               
                     <a href="https://www.zeffy.com/en-US/newsletter-form/sign-up-for-our-newsletter-3604" target="_blank" rel="noopener noreferrer">Newsletter</a>
                     <!--<a href="contact">Contact</a>-->
                 </div>
+            </div>
+            <div class="navigation-desktop">
+                    <a href="about-us.html">About Us</a>
+                    <!--<a href="history">History</a>-->               
+                    <a href="https://www.zeffy.com/en-US/newsletter-form/sign-up-for-our-newsletter-3604" target="_blank" rel="noopener noreferrer">Newsletter</a>
+                    <!--<a href="contact">Contact</a>-->
             </div>
         </header>
         <img class="main-img" src="images/windermere-mural-installation-cropped.jpg">
@@ -119,7 +125,7 @@
         
             // Close dropdown when clicking outside
             document.addEventListener('click', function(event) {
-                if (!event.target.closest('.dropdown')) {
+                if (!event.target.closest('.navigation-mobile')) {
                     document.querySelector('.dropdown-content').style.display = 'none';
                 }
             });

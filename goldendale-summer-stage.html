@@ -100,7 +100,7 @@
         
             // Close dropdown when clicking outside
             document.addEventListener('click', function(event) {
-                if (!event.target.closest('.dropdown')) {
+                if (!event.target.closest('.navigation-mobile')) {
                     document.querySelector('.dropdown-content').style.display = 'none';
                 }
             });
