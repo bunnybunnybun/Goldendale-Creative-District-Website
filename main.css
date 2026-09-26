@@ -52,9 +52,8 @@ div.welcome {
 }
 
 div.welcome p {
-    width: 50%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    max-width: 40ch;
+    margin: 100px 30px;
     color: var(--gold);
     background-color: #e45557;
     padding: 20px;
@@ -215,7 +214,7 @@ a.newsletter-button:active {
 
 .donate-paragraph {
     margin-top: 60px;
-    width: 50%;
+    max-width: min(45ch, 60%);
     margin-left: auto;
     margin-right: auto;
     text-align: left;
