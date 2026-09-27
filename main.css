@@ -185,31 +185,8 @@ div.welcome_box {
     margin-bottom: 10px;
 }
 
-a.newsletter-button {
-    display: inline-block;
-    font-size: 24px;
-    margin: 30px;
-    margin-bottom: 10px;
-    background-color: var(--gold);
-    padding: 15px;
-    border-radius: 20px;
-    border-style: none;
-    box-shadow: 0px 6px 0px 0px #a2762a;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
-    color: var(--font-color);
-}
-
-a.newsletter-button:hover {
-    scale: 1.15;
-    rotate: z 2deg;
-    background-color: #ffd350;
-    box-shadow: 0px 6px 0px 0px #a69036;
-}
-
-a.newsletter-button:active {
-    box-shadow: 0px 0px 0px 0px #a2762a;
-    translate: 0px 6px;
+.newsletter {
+    font-size: 20px;
 }
 
 .donate-paragraph {
@@ -288,4 +265,8 @@ a.footer-text {
     color: var(--font-color);
     margin-left: 35px;
     margin-right: 35px;
+}
+
+[data-zeffy-embed] {
+  background: transparent !important;
 }

@@ -8,6 +8,7 @@ header {
     font-size: 32px;
     color: var(--gold);
     box-shadow: 0px 0px 5px 5px #00000055;
+    text-shadow: var(--text-shadow);
     z-index: 99;
     position: sticky;
     top: 0;
@@ -101,7 +102,6 @@ img.logo {
 
 .header-title {
     vertical-align: center;
-    text-shadow: var(--text-shadow);
     margin: 20px;
     color: var(--gold);
 }
