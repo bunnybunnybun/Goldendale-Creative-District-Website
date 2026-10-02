@@ -82,6 +82,19 @@ div.welcome_box {
     z-index: 99999999;
 }
 
+.town-hall {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px;
+}
+
+.town-hall img {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+}
+
 .upcoming-events {
     color: var(--gold);
     margin-top: 35px;

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Goldendale Creative District</title>
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="summer-stage.css" />
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="images/logo.jpg" height="100px" width="100px" class="logo"></a>
+            <a href="index.html" style="text-decoration: none;"><b class="header-title">Goldendale Creative District</b></a>
+            <div class="navigation-mobile">
+                <button class="drop-btn">☰</button>
+                <div class="dropdown-content">
+                    <a href="about-us.html">About Us</a>
+                    <!--<a href="history">History</a>-->               
+                    <a href="https://www.zeffy.com/en-US/newsletter-form/sign-up-for-our-newsletter-3604" target="_blank" rel="noopener noreferrer">Newsletter</a>
+                    <!--<a href="contact">Contact</a>-->
+                </div>
+            </div>
+            <div class="navigation-desktop">
+                    <a href="about-us.html">About Us</a>
+                    <!--<a href="history">History</a>-->               
+                    <a href="https://www.zeffy.com/en-US/newsletter-form/sign-up-for-our-newsletter-3604" target="_blank" rel="noopener noreferrer">Newsletter</a>
+                    <!--<a href="contact">Contact</a>-->
+            </div>
+        </header>
+        <div class="content">
+            <div class="event-passed-disclaimer">This event has passed!</div>
+
+            <div class="div-1">
+                <p><span class="title">Goldendale Summer Stage</span><br>brought the community together to showcase local youth talent, and bring in professional performers.</p>
+                <img src="images/WoW-performance.jpg">
+            </div>
+        </div>
+
+        <!-- The cast videos -->
+        <h2 class="cast-header">The cast</h2>
+        <div class="cast-grid">
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/BARRETT JAEGER.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/BELLA BATASTINI.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/CARLISLE POE.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/CHRYSANTHEMUM NANOCCHIO.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/DIANA KUNTZ.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/ELIAS COLYAR.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/FIN JAUKEN.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/HENRY DUYCK.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/JOEY BATASTINI.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/JON JON LEHMAN.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/JOURNEY WILLETT.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/KYLA SHERIDAN.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/MONTERREY MOODY.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/ROMAN NANOCCHIO.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/SAMMY BATASTINI.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/SILAS CALLAGHAN.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/SOPHIE ALLRED-MARKHAM.mp4" type="video/mp4">
+            </video>
+            <video loop muted preload="auto" class="cast-video">
+                <source src="cast-videos/SUSIE PHELPS.mp4" type="video/mp4">
+            </video>
+            
+            <script>
+              const videos = document.querySelectorAll('.cast-video');
+              
+              videos.forEach(video => {
+                video.addEventListener('mouseenter', () => {
+                  video.play();
+                });
+                
+                video.addEventListener('mouseleave', () => {
+                  video.pause();
+                  video.currentTime = 0;
+                });
+              });
+            </script>
+        </div>
+
+        <!-- Sponsors -->
+         <div class="sponsors-div">
+            <h3 class="ty-sponsors">A huge thank you to our sponsors</h3>
+            <div class="master-piece-sponsor">
+                <p class="sponsor-level">Masterpiece sponsor</p>
+                <img class="sponsor-logo" src="images/hippo-hall-logo.jpg">
+            </div>
+            <p class="sponsor-level">Creative collaborators</p>
+            <div class="creative-collaborator-sponsors">
+                <a class="block" href="https://www.maryhillmuseum.org/" target="_blank" rel="noopener noreferrer"><img class="sponsor-logo" src="images/maryhill-museum-logo.svg"></a>
+                <a class="block" href="https://www.goldendalerx.com/" target="_blank" rel="noopener noreferrer"><img class="sponsor-logo" src="images/goldendale-pharmacy-logo.webp"></a>
+            </div>
+            <div class="community-canvas-sponsors">
+                <p class="sponsor-level">Community Canvas</p>
+                <a class="block" href="https://www.windermere.com/directory/offices/goldendale-1" target="_blank" rel="noopener noreferrer"><img class="sponsor-logo" src="images/windermere.png" style="background-color: #002A4E; height: 100px;"></a>
+            </div>
+            <p class="sponsor-level">Art enthusiasts</p>
+            <div class="art-enthusiast-sponsors">
+                <img class="small-sponsor-logo" src="images/D`Avanzos.jpg">
+                <a href="https://www.lesschwab.com/" target="_blank" rel="noopener noreferrer"><p class="sponsor-no-img">Les Schwab</p></a>
+                <a class="block" href="https://sandrachoate.com/" target="_blank" rel="noopener noreferrer"><img class="small-sponsor-logo" src="images/monkeyshine's-logo.jpg"></a>
+            </div>
+            <p class="sponsor-level">In kind donations</p>
+            <div class="in-kind-sponsors">
+                <p class="sponsor-no-img">The Red House<br>Vacation Rental</p>
+                <a class="block" href="https://bishopsanitation.com/" target="_blank" rel="noopener noreferrer"><img class="small-sponsor-logo" src="images/bishop-sanitation-logo.jpg"></a>
+                <p class="sponsor-no-img">Pat's Place</p>
+                <p class="sponsor-no-img">Father's House<br>Fellowship</p>
+                <p class="sponsor-no-img">American Legion<br>Post 116</p>
+                <a class="block" href="https://www.inspiredjourneysoundproduction.com/" target="_blank" rel="noopener noreferrer"><img class="small-sponsor-logo" src="images/inspired-journey-sound-production-logo.webp"></a>
+                <a class="block" href="https://www.maryhillwinery.com/" target="_blank" rel="noopener noreferrer"><img class="small-sponsor-logo" src="images/maryhill-winery-logo.webp"></a>
+            </div>
+        </div>
+        
+        <div class="wave-divider"></div>
+        <footer>
+            <a href="about-us.html" class="footer-text">About Us</a>
+            <!--<a href="history" class="footer-text">History</a>-->
+            <a href="https://www.zeffy.com/en-US/newsletter-form/sign-up-for-our-newsletter-3604" target="_blank" rel="noopener noreferrer" class="footer-text">Our Newsletter</a>
+            <!--<a href="contact" class="footer-text">Contact Us</a>-->
+            <img style="margin: 5px; margin-left: auto; height: 50px;" src="images/shunpike.png">
+            <p style="color: black; margin: 5px; font-size: 16px;">Goldendale Creative District is<br>fiscally sponsored by Shunpike.</p>
+        </footer>
+        <script>
+            // Show navigation dropdown when clicking the hamburger menu button
+            document.querySelector('.drop-btn').addEventListener('click', function() {
+                const content = document.querySelector('.dropdown-content');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.navigation-mobile')) {
+                    document.querySelector('.dropdown-content').style.display = 'none';
+                }
+            });
+        </script>
+    </body>
+</html>
