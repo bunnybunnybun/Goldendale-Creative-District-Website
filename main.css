@@ -112,10 +112,23 @@ div.welcome_box {
 
 .upcoming-events {
     color: var(--gold);
-    margin-top: 35px;
     text-shadow: 2px 2px #00000085;
     font-size: 38px;
     font-weight: 700;
+}
+
+.future-events {
+    text-align: left;
+    background-color: var(--red);
+    padding: 20px;
+    margin: 40px 15%;
+    border-radius: 20px;
+}
+
+@media (min-width: 1080px) {
+    .future-events {
+        margin: 40px 20%;
+    }
 }
 
 .newsletter {
