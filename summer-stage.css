@@ -51,9 +51,17 @@ img {
 }
 
 .div-1 img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-start;
+}
+
+.div-1 div {
+    width: 60%;
+    margin-inline: auto
 }
 
 @media (min-width: 1080px) {
@@ -62,6 +70,10 @@ img {
     }
 
     .div-1 img {
+        width: 50%;
+    }
+
+    .div-1 div {
         width: 50%;
     }
 }
