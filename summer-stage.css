@@ -61,6 +61,30 @@ body {
     }
 }
 
+.collage-mobile {
+    display: block;
+    margin: 40px auto;
+    width: 90%;
+    height: auto;
+}
+
+.collage-desktop-1, .collage-desktop-2 {
+    display: none;
+    margin: 40px auto;
+    max-width: 90%;
+    height: auto;
+}
+
+@media (min-width: 1080px) {
+    .collage-mobile {
+        display: none;
+    }
+
+    .collage-desktop-1, .collage-desktop-2 {
+        display: block;
+    }
+}
+
 .title {
     font-size: 32px;
 }
