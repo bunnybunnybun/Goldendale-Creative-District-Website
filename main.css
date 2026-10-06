@@ -145,6 +145,20 @@ div.welcome_box {
     font-size: 20px;
 }
 
+[data-zeffy-embed] {
+  background: transparent !important;
+}
+
+.past-projects {
+    display: inline-block;
+    font-size: 28px;
+    margin-top: 20px;
+    color: var(--gold);
+    text-shadow: 2px 2px #00000085;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 .donate-paragraph {
     margin-top: 60px;
     max-width: min(45ch, 60%);
@@ -223,6 +237,3 @@ a.footer-text {
     margin-right: 35px;
 }
 
-[data-zeffy-embed] {
-  background: transparent !important;
-}

@@ -1,0 +1,88 @@
+:root {
+    --main-bg-color: #5ccafe;
+    --main-box-bg-color: #00CACA;
+    --font-color: #000000;
+    --gold: #F4AF36;
+    --teal: #00CACA;
+    --blue: #0265ff;
+    --purple: #B036F3;
+    --lime: #8EF438;
+    --pink: #FF3DB7;
+    --text-shadow: 2px 2px 2px #00000055;
+    --red: #e45557;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    margin: 0px;
+    text-align: center;
+    overflow-x: hidden;
+    color: var(--font-color);
+    background-image: url(images/blob-scatter.svg);
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.div-1 {
+    display: flow-root;
+    margin: 40px;
+}
+
+.div-1 img {
+    width: 50%;
+    border-radius: 20px;
+    float: right;
+    margin-left: 30px;
+}
+
+.div-1 p {
+    text-align: left;
+    float: none;
+    font-size: 24px;
+}
+
+@media (min-width: 1080px) {
+    .div-1 p {
+        font-size: 20px;
+    }
+}
+
+
+.wave-divider {
+    aspect-ratio: 900/150;
+    background: no-repeat center;
+    background-size: cover;
+    background-image: url(images/layered-waves-divider.svg);
+}
+
+footer {
+    background-color: #EA3A3A;
+    margin: 0px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 24px;
+    color: #e7efff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a.footer-text {
+    color: var(--font-color);
+    margin-left: 35px;
+    margin-right: 35px;
+}
