@@ -1,0 +1,50 @@
+
+.wave-divider {
+    aspect-ratio: 900/150;
+    background: no-repeat center;
+    background-size: cover;
+    background-image: url(images/layered-waves-divider.svg);
+}
+
+footer {
+    background-color: #EA3A3A;
+    margin: 0px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 24px;
+    color: #e7efff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a.footer-text {
+    color: var(--font-color);
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+div.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+div.footer-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto
+}
+
+img.fiscal-sponsor-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin: 5px;
+}
+
+p.fiscal-sponsor-p {
+    color: black;
+    margin: 5px;
+    font-size: 16px;
+}

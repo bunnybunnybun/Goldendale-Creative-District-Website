@@ -69,29 +69,3 @@ img {
         font-size: 20px;
     }
 }
-
-.wave-divider {
-    aspect-ratio: 900/150;
-    background: no-repeat center;
-    background-size: cover;
-    background-image: url(images/layered-waves-divider.svg);
-}
-
-footer {
-    background-color: #EA3A3A;
-    margin: 0px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 24px;
-    color: #e7efff;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-a.footer-text {
-    color: var(--font-color);
-    margin-left: 35px;
-    margin-right: 35px;
-}
